@@ -1190,9 +1190,14 @@
 
         .footer-section .powered-by img,
         .card-section:not(.preview) .footer-section .powered-by img {
-            width: 120px;
+            width: 72px;
             height: auto;
             border-radius: 8px;
+        }
+
+        .card-section.preview .footer-section .powered-by img {
+            width: 72px;
+            height: auto;
         }
 
         .tech-lab {
@@ -1445,7 +1450,7 @@
                 padding: 20px 0;
             } */
             .card-section:not(.preview) .footer-section img{
-                width: 80%;
+                width: auto;
             }
             /* .bg-container { 
                 min-height: 72px;
