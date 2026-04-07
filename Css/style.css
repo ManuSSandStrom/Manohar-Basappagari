@@ -1664,20 +1664,20 @@
 
             .AddtoContactsmobile{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 position: fixed;
                 bottom: 0px;
                 left: 0px;
                 background-color: #fff;
                 box-shadow: 0px 0px 15px #0000001F;
                 width: 100%;
-                padding: 20px 0;
+                padding: 12px 10px;
                 border-top: unset;
             }
 
             .download-section{
                 justify-content: center;
-                padding: 20px 30px;
+                padding: 12px 10px;
             }
             /* .mySlider .slick-slide {
                 width: 320px !important;
@@ -1713,7 +1713,7 @@
             }
 
             .download-section {
-                padding: 20px 15px;
+                padding: 12px 10px;
             }
 
             form{
@@ -1748,10 +1748,16 @@
                 padding: 20px 0;
             }
 
+            .download-leftSection {
+                width: 100%;
+                gap: 6px;
+            }
+
             .download-leftSection a{
                 display: flex;
                 width: auto;
-                height: 40px;
+                height: 32px;
+                margin-right: 0;
             }
 
             .social-media-links-right a{
@@ -1883,6 +1889,24 @@
             .social-media-links-right{
                 gap: 8px;
             }
+
+            .service-brand {
+                gap: 8px;
+                padding: 18px 12px 16px;
+                border-radius: 0 0 14px 14px;
+            }
+
+            .service-brand img {
+                width: 160px;
+                max-width: 72%;
+                border-radius: 10px;
+            }
+
+            .service-brand p {
+                font-size: 15px;
+                line-height: 22px;
+                max-width: 300px;
+            }
         }
 
         @media screen and (max-width:440px) {
@@ -1891,7 +1915,7 @@
             }
             
             .download-section {
-                padding: 20px 15px;
+                padding: 12px 10px;
             }
 
             .social-media-links-right {
@@ -2017,12 +2041,17 @@
             } */
              
             .download-section{
-                padding: 20px 15px;
-                gap: 10px;
+                padding: 12px 8px;
+                gap: 0;
             }
 
             .download-leftSection a {
-                margin-right: 5px;
+                height: 30px;
+                margin-right: 0;
+            }
+
+            .download-leftSection {
+                gap: 5px;
             }
             .social-media-links-right {
                 gap: 5px;
