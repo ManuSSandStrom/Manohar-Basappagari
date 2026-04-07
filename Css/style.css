@@ -402,11 +402,28 @@
         .phone-container {
             display: flex;
             align-items: center;
+            gap: 12px;
+            width: 100%;
         }
         .phone-numbers{
             display: flex;
             justify-content: space-between;
-            width: 100%;
+            width: auto;
+            flex: 1;
+        }
+
+        .contact-social-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .contact-social-links a,
+        .contact-social-links img {
+            width: 32px;
+            height: 32px;
+            display: block;
         }
 
         .email{

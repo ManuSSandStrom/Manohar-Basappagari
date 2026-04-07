@@ -7,11 +7,12 @@ const fallbackData = {
         lastname: "Basappagari",
         role: "MERN Stack Web Developer, Full Stack Web Architect & UI/UX Specialist",
         mobile: "+91 9515022680",
-        email: "manoharbasappagari18@gmail.com",
-        companyEmail: "mernpixel@gmail.com",
+        email: "mernpixeldev@gmail.com",
+        companyEmail: "mernpixeldev@gmail.com",
         website: "https://mernpixel.com",
         whatsapp: "919515022680",
-        linkedin: ""
+        linkedin: "https://www.linkedin.com/in/manohar-basappagari-398606335",
+        instagram: "https://www.instagram.com/mernpixel/?igsh=MXV3ZzlmMnYwMjRxZA=="
     }
 };
 
@@ -73,6 +74,15 @@ async function main() {
             linkedin.href = p.linkedin;
         } else {
             linkedin.style.display = "none";
+        }
+    }
+
+    const instagram = qs("#instagram");
+    if (instagram) {
+        if (p.instagram) {
+            instagram.href = p.instagram;
+        } else {
+            instagram.style.display = "none";
         }
     }
 
