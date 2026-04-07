@@ -1200,66 +1200,35 @@
             height: auto;
         }
 
-        .tech-lab {
-            background: linear-gradient(135deg, rgba(18, 21, 43, 0.03), rgba(86, 199, 217, 0.06), rgba(242, 140, 40, 0.05));
+        .clients-section {
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.025), rgba(242, 140, 40, 0.06));
         }
 
-        .lab-intro {
-            margin-bottom: 16px;
+        .clients-intro {
+            margin-bottom: 18px;
         }
 
-        .tech-grid {
+        .clients-logo-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 12px;
-            margin: 16px 0 20px;
         }
 
-        .tech-grid span {
-            border: 1px solid rgba(49, 111, 230, 0.18);
+        .clients-logo-grid span {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px dashed rgba(17, 24, 39, 0.18);
+            border-radius: 16px;
             background: rgba(255, 255, 255, 0.82);
-            border-radius: 14px;
-            padding: 14px;
-            box-shadow: 0 8px 20px rgba(18, 21, 43, 0.06);
-        }
-
-        .tech-grid b {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 4px;
-        }
-
-        .tech-grid small {
-            color: #64748b;
+            color: #94a3b8;
             font-family: "Roboto";
             font-size: 14px;
-            font-weight: 700;
-        }
-
-        .workflow-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            list-style: none;
-        }
-
-        .workflow-list li {
-            color: #475569;
-            font-family: "Roboto";
-            font-size: 18px;
-            line-height: 27px;
-            padding: 13px 15px;
-            border-left: 4px solid #56c7d9;
-            background: rgba(255, 255, 255, 0.78);
-            border-radius: 0 12px 12px 0;
-        }
-
-        .workflow-list li:nth-child(2) {
-            border-left-color: #de1751;
-        }
-
-        .workflow-list li:nth-child(3) {
-            border-left-color: #f28c28;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(17, 24, 39, 0.04);
         }
 
 
