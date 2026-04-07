@@ -107,6 +107,15 @@ async function main() {
         }
     }
 
+    const previewInstagram = qs("#preview-instagram");
+    if (previewInstagram) {
+        if (p.instagram) {
+            previewInstagram.href = p.instagram;
+        } else {
+            previewInstagram.style.display = "none";
+        }
+    }
+
     const companyWebsiteLink = qs("#company-website-link");
     if (companyWebsiteLink && p.website) companyWebsiteLink.href = p.website;
 

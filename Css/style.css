@@ -1168,7 +1168,7 @@
             left: 0 !important;
             background-size: 32px 32px !important;
         }
-        .shareon>.whatsapp ,.shareon>.linkedin ,.shareon>.facebook, .shareon>.twitter{
+        .shareon>.whatsapp ,.shareon>.linkedin ,.shareon>.instagram ,.shareon>.facebook, .shareon>.twitter{
             background-color: transparent !important;
         }
         .shareon .whatsapp::before {
@@ -1176,6 +1176,9 @@
         }
         .shareon .linkedin::before {
             background-image: url(../Assets/linkedin_icon.svg) !important;
+        }
+        .shareon .instagram::before {
+            background-image: url(../Assets/Instagram_icon.svg) !important;
         }
         .shareon .facebook::before {
             background-image: url(../Assets/facebook_icon.svg) !important;
