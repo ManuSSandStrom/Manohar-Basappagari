@@ -758,8 +758,26 @@
             font-size: 26px;
             line-height: 32px;
             font-weight: 900;
-            margin-bottom: 12px;
+            margin-bottom: 0;
             /* text-align: center; */
+        }
+
+        .company-heading {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .company-heading img {
+            width: 58px;
+            height: 58px;
+            object-fit: contain;
+            border-radius: 16px;
+            padding: 8px;
+            background: #ffffff;
+            box-shadow: 0 8px 22px rgba(20, 20, 21, 0.08);
+            border: 1px solid rgba(217, 154, 24, 0.22);
         }
         .company-address{
             color: #333333;
