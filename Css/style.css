@@ -985,17 +985,27 @@
             border-top: 0.5px solid rgba(112, 112, 112, 0.3);
         }
         .copyLink{
-            width: 205px;
+            width: 44px;
+            height: 44px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .card-section.preview .imgdownloadBtn{
+        .copyLink img {
+            width: 44px;
+            height: 44px;
+            display: block;
+        }
+        .card-section.preview #imgdownloadBtn{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 40px;
-            width: 40px;
+            height: 44px;
+            width: 44px;
+        }
+        .card-section.preview #imgdownloadBtn img{
+            height: 44px;
+            width: 44px;
         }
         .card-section.preview .share-section , .shareon{
             display: flex;
