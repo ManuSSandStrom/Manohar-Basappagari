@@ -111,14 +111,31 @@
             height: 100%;
             position: fixed;
             top: -9999px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.76);
             z-index: 2;
             padding-bottom: 0;
         }
+        .card-section.preview::before {
+            content: "</>  MERN  API  React  Node";
+            position: absolute;
+            inset: 0;
+            color: #ffffff;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: 28px;
+            line-height: 160px;
+            opacity: 0.045;
+            transform: rotate(-7deg) scale(1.1);
+            pointer-events: none;
+        }
         .card-section.preview .card{
-            width: 450px;
-            border-radius: 20px;
+            width: 424px;
+            max-width: calc(100% - 32px);
+            border-radius: 22px;
             border: none;
+            overflow: visible;
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
             /* padding-top: 60px; */
         }
 
@@ -136,15 +153,35 @@
 
         .ClosebtnBlock{
             position: absolute;
-            right: 10px;
-            top: 10px;
-            z-index: 1;
+            right: 8px;
+            top: 8px;
+            z-index: 3;
             cursor: pointer;
+        }
+
+        .card-section.preview .ClosebtnBlock {
+            right: 8px;
+            top: 8px;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #54a306;
+            border-radius: 4px;
+            background: rgba(4, 49, 43, 0.9);
+        }
+
+        .card-section.preview .Closebtn,
+        .card-section.preview .Closebtn img {
+            width: 30px;
+            height: 30px;
+            display: block;
         }
 
 
         .card-section.preview .card-header {
-            /* height: 210px; */
+            min-height: 130px;
             position: relative;
             /* aspect-ratio: 25 / 8; */
             width: 100%;
@@ -156,14 +193,14 @@
             align-items: center;
         }
         .card-section.preview  .card-body {
-            padding: 0px 30px 0 30px;       
+            padding: 64px 26px 0 26px;
         }
         .card-section.preview .qrcode{ 
             display: flex;
             justify-content: center;
             align-items: center;
             border-top: 0.5px solid rgba(112, 112, 112, 0.5);
-            padding: 20px 0;
+            padding: 20px 0 18px;
         }
         .bg-container{ 
             width: 100%;
@@ -997,20 +1034,45 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 18px 0;
             border-top: 0.5px solid rgba(112, 112, 112, 0.3);
         }
         .copyLink{
-            width: 44px;
+            width: auto;
+            min-width: 190px;
             height: 44px;
+            padding: 0 18px;
+            gap: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 999px;
+            background: #f2f2f2;
+            color: #222222;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 700;
         }
-        .copyLink img {
-            width: 44px;
-            height: 44px;
+
+        .copy-icon {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #8a94a6;
+            border-radius: 4px;
             display: block;
+        }
+
+        .copy-icon::before {
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #8a94a6;
+            border-radius: 4px;
+            left: -6px;
+            top: -4px;
+            background: #f2f2f2;
         }
         .card-section.preview #imgdownloadBtn{
             display: flex;
@@ -1018,10 +1080,12 @@
             align-items: center;
             height: 44px;
             width: 44px;
+            border-radius: 50%;
+            background: #04312B;
         }
         .card-section.preview #imgdownloadBtn img{
-            height: 44px;
-            width: 44px;
+            height: 40px;
+            width: 40px;
         }
         .card-section.preview .share-section , .shareon{
             display: flex;
@@ -1045,20 +1109,20 @@
         /* shareon related */
         .shareon>* {
             padding: 0 !important;
-            margin: 0 0 0 12px !important;
+            margin: 0 0 0 14px !important;
         }
         .shareon a {
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
         }
         .shareon a::before {
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
         }
         .shareon>:before {
             top: 0 !important;
             left: 0 !important;
-            background-size: 30px 30px !important;
+            background-size: 32px 32px !important;
         }
         .shareon>.whatsapp ,.shareon>.linkedin ,.shareon>.facebook, .shareon>.twitter{
             background-color: transparent !important;
@@ -1268,6 +1332,65 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             box-shadow: 0 8px 20px rgba(17, 24, 39, 0.04);
+        }
+
+        .card-section.preview .card-content,
+        .card-section.preview .loading-container {
+            border-radius: 22px;
+            overflow: hidden;
+        }
+
+        .card-section.preview .card-banner,
+        .card-section.preview .card-banner img {
+            height: 130px;
+            width: 100%;
+            aspect-ratio: auto;
+            object-fit: cover;
+            object-position: center 55%;
+            border-radius: 22px 22px 0 0;
+        }
+
+        .card-section.preview .profile-imagemaincontainer {
+            bottom: -62px;
+            padding: 0 34px;
+            align-items: flex-end;
+        }
+
+        .card-section.preview .profile-image-container {
+            width: 132px;
+            height: 132px;
+            box-shadow: 0 6px 18px rgba(4, 49, 43, 0.16);
+        }
+
+        .card-section.preview .profile-image {
+            width: 120px;
+            height: 120px;
+        }
+
+        .card-section.preview .name-container {
+            padding: 10px 0 20px;
+        }
+
+        .card-section.preview .name {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .card-section.preview .title {
+            color: #55a307;
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: 800;
+        }
+
+        .card-section.preview .qrcode svg {
+            width: 270px;
+            height: 270px;
+            max-width: 100%;
+        }
+
+        .card-section.preview #footer-section-preview {
+            padding: 18px 0 28px;
         }
 
 
