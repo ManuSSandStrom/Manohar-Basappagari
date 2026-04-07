@@ -68,12 +68,24 @@ async function main() {
     const whatsapp = qs("#whatsapp");
     if (whatsapp && p.whatsapp) whatsapp.href = "https://wa.me/" + p.whatsapp;
 
+    const companyWhatsapp = qs("#company-whatsapp");
+    if (companyWhatsapp && p.whatsapp) companyWhatsapp.href = "https://wa.me/" + p.whatsapp;
+
     const linkedin = qs("#linkedin");
     if (linkedin) {
         if (p.linkedin) {
             linkedin.href = p.linkedin;
         } else {
             linkedin.style.display = "none";
+        }
+    }
+
+    const companyLinkedin = qs("#company-linkedin");
+    if (companyLinkedin) {
+        if (p.linkedin) {
+            companyLinkedin.href = p.linkedin;
+        } else {
+            companyLinkedin.style.display = "none";
         }
     }
 
@@ -85,6 +97,18 @@ async function main() {
             instagram.style.display = "none";
         }
     }
+
+    const companyInstagram = qs("#company-instagram");
+    if (companyInstagram) {
+        if (p.instagram) {
+            companyInstagram.href = p.instagram;
+        } else {
+            companyInstagram.style.display = "none";
+        }
+    }
+
+    const companyWebsiteLink = qs("#company-website-link");
+    if (companyWebsiteLink && p.website) companyWebsiteLink.href = p.website;
 
     generateQrCodePreview(Id);
     imgGenerator();
