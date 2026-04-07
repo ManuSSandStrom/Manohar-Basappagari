@@ -743,8 +743,7 @@
         }
 
         .company-section {
-            padding: 25px 0;
-            border-top: 0.5px solid rgba(112, 112, 112, 0.5);
+            padding: 28px 10px 0;
         }
         .company,.services{
             color: #180B3C;
@@ -754,19 +753,21 @@
             margin-bottom: 12px;
         }
         .company-name{
-            color: #0B3A73;
+            color: #D99A18;
             font-family: 'Roboto';
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 26px;
+            line-height: 32px;
+            font-weight: 900;
+            margin-bottom: 12px;
             /* text-align: center; */
         }
         .company-address{
-            color: #220A00;
+            color: #333333;
             font-family: 'Roboto';
-            font-size: 18px;
-            margin-bottom: 25px;
-            padding-right: 80px;
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 18px;
+            padding-right: 0;
             /* padding: 0 40px; */
             /* text-align: center; */
         }
@@ -781,14 +782,15 @@
             display: flex;
             flex-direction: column;
             /* align-items: center; */
-            gap: 5px;
+            gap: 8px;
             /* text-align: center; */
         }
         .company-contact a{
             text-decoration: none;
-            color: #220A00;
+            color: #282828;
             font-family: 'Roboto';
             font-size: 20px;
+            font-weight: 800;
             cursor: pointer;
         }
 
@@ -1211,7 +1213,7 @@
 
         .content-block {
             border-top: 0.5px solid rgba(112, 112, 112, 0.5);
-            padding: 25px 10px;
+            padding: 24px 10px;
         }
 
         .content-block h3 {
@@ -1224,21 +1226,21 @@
 
         .content-block p,
         .highlight-list li {
-            color: #475569;
+            color: #333333;
             font-family: "Roboto";
-            font-size: 19px;
-            line-height: 28px;
+            font-size: 20px;
+            line-height: 1.75;
         }
 
         .content-block b {
-            color: #0B3A73;
+            color: #252525;
         }
 
         .highlight-list {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 8px;
         }
 
         .highlight-list li {
@@ -1250,11 +1252,11 @@
             content: "";
             position: absolute;
             left: 0;
-            top: 11px;
-            width: 8px;
-            height: 8px;
+            top: 15px;
+            width: 7px;
+            height: 7px;
             border-radius: 50%;
-            background: #de1751;
+            background: #D99A18;
         }
 
         .service-group {
@@ -1266,7 +1268,7 @@
         }
 
         .service-group h4 {
-            color: #de1751;
+            color: #D99A18;
             font-family: "Roboto";
             font-size: 20px;
             font-weight: 800;
@@ -1281,11 +1283,55 @@
         }
 
         .callout {
-            background: #fff1f5;
-            border-left: 5px solid #de1751;
+            background: #fff8e8;
+            border-left: 5px solid #D99A18;
             border-radius: 0 10px 10px 0;
             padding: 15px 18px;
             margin-bottom: 20px;
+        }
+
+        .profile-download-divider {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 24px 10px 8px;
+            border-top: 0.5px solid rgba(112, 112, 112, 0.5);
+        }
+
+        .profile-download-line {
+            flex: 1;
+            height: 1px;
+            background: rgba(112, 112, 112, 0.28);
+        }
+
+        #profileDownloadBtn {
+            min-width: 218px;
+            height: 50px;
+            padding: 0 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-radius: 10px;
+            background: #141415;
+            color: #ffffff;
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 500;
+            white-space: nowrap;
+            box-shadow: 0 8px 22px rgba(20, 20, 21, 0.12);
+        }
+
+        #profileDownloadBtn b {
+            font-weight: 900;
+        }
+
+        .profile-download-icon {
+            width: 24px;
+            height: 24px;
+            display: block;
+            color: #D99A18;
+            flex-shrink: 0;
         }
 
         .powered-by {

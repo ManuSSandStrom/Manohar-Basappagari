@@ -159,6 +159,10 @@ function downloadVcard() {
 
 document.getElementById("vcarddownloadBtn")?.addEventListener("click", downloadVcard);
 document.getElementById("vcarddownloadBtnMobile")?.addEventListener("click", downloadVcard);
+document.getElementById("profileDownloadBtn")?.addEventListener("click", function(e) {
+    e.preventDefault();
+    downloadVcard();
+});
 
 document.getElementById("copyLink")?.addEventListener("click", function(e) {
     e.preventDefault();
