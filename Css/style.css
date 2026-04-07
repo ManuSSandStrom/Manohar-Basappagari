@@ -545,13 +545,13 @@
         .download-leftSection a{
             display: flex;
             justify-content: center;
-            margin-right: 10px;
+            margin-right: 8px;
             cursor: pointer;
         }
 
         .download-leftSection a{
             /* width: 36px; */
-            height: 50px;
+            height: 44px;
         }
 
         .download-leftSection a img {
@@ -1311,45 +1311,21 @@
         .profile-download-divider {
             display: flex;
             align-items: center;
-            gap: 14px;
-            padding: 24px 10px 8px;
+            justify-content: center;
+            padding: 24px 0 8px;
             border-top: 0.5px solid rgba(112, 112, 112, 0.5);
         }
 
-        .profile-download-line {
-            flex: 1;
-            height: 1px;
-            background: rgba(112, 112, 112, 0.28);
-        }
-
         #profileDownloadBtn {
-            min-width: 218px;
-            height: 50px;
-            padding: 0 22px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            border-radius: 10px;
-            background: #141415;
-            color: #ffffff;
-            font-family: "Roboto";
-            font-size: 18px;
-            font-weight: 500;
-            white-space: nowrap;
-            box-shadow: 0 8px 22px rgba(20, 20, 21, 0.12);
-        }
-
-        #profileDownloadBtn b {
-            font-weight: 900;
-        }
-
-        .profile-download-icon {
-            width: 24px;
-            height: 24px;
+            width: 100%;
+            height: 44px;
             display: block;
-            color: #D99A18;
-            flex-shrink: 0;
+        }
+
+        #profileDownloadBtn img {
+            width: 100%;
+            height: 44px;
+            display: block;
         }
 
         .powered-by {
