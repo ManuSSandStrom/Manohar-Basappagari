@@ -189,8 +189,6 @@
         .card-header {
             /* height: 440px; */
             position: relative;
-            overflow: hidden;
-            border-radius: 20px 20px 0 0;
         }
 
         #banner-image-main,
@@ -200,6 +198,7 @@
             aspect-ratio: 500 / 210;
             object-fit: cover;
             object-position: center 58%;
+            border-radius: 20px 20px 0 0;
         }
 
         .profile-border{
