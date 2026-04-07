@@ -22,7 +22,7 @@
         }
         body {
             font-family: 'Roboto';
-            background: transparent linear-gradient(180deg, #FFFFFF 0%, #eef6ff 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #FFFFFF 0%, #f3f7ff 50%, #fff4eb 100%) 0% 0% no-repeat padding-box;
             background-repeat: repeat-y;
             background-attachment: fixed;
             /* background-repeat: no-repeat; */
@@ -71,7 +71,7 @@
             top: 0;
             overflow: hidden;
             z-index: -2;
-            background-color: #eef6ff;
+            background-color: #f3f7ff;
         }
         .cardbgcolorblock::after {
             content: "";
@@ -296,7 +296,7 @@
         .title {
             font-family: 'Roboto';
             font-weight: 500;
-            color: #0B3A73;
+            color: #316fe6;
             /* opacity: 0.8; */
             font-size: 20px;
             text-align: left;
@@ -499,17 +499,17 @@
             width: 70%;      
             height: auto;
             border-radius: 12px;
-            background-color: #04312B;  
+            background: linear-gradient(135deg, #12152b, #316fe6, #de1751);
             font-size: 20px;
         }
 
         .download-leftSection button:hover{
-            background-color: #55A307;
+            background: linear-gradient(135deg, #7c4dff, #56c7d9, #f28c28);
         }
 
         #formclosebtn{
-            background-color: rgba(4,49,43, 0.2);  
-            color: #04312B;
+            background-color: rgba(49,111,230, 0.12);
+            color: #12152b;
         }
 
         .social-media-links-right{
@@ -684,7 +684,7 @@
             margin-bottom: 12px;
         }
         .company-name{
-            color: #0B3A73;
+            color: #316fe6;
             font-family: 'Roboto';
             font-size: 24px;
             font-weight: bold;
@@ -909,7 +909,7 @@
         /* Button styling */
         button {
             width: 50%;
-            background-color: #05463E;
+            background: linear-gradient(135deg, #12152b, #316fe6, #de1751);
             padding:20px 30px;
             border-radius: 8px;
             color: #fff;
@@ -919,7 +919,7 @@
         }
 
         button:hover {
-            background-color: #55A307;
+            background: linear-gradient(135deg, #7c4dff, #56c7d9, #f28c28);
         }
 
         .formbtn button{
@@ -1040,7 +1040,26 @@
         }
 
         body {
-            background: transparent linear-gradient(180deg, #FFFFFF 0%, #eef6ff 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #FFFFFF 0%, #f3f7ff 50%, #fff4eb 100%) 0% 0% no-repeat padding-box;
+        }
+
+        .cardbgcolorblock {
+            background: linear-gradient(135deg, #f7f4ff 0%, #ecfbff 42%, #fff5ea 100%);
+        }
+
+        .cardbgcolorblock::before {
+            content: "</>  { }  npm  React  Node  MongoDB  API  UI";
+            position: absolute;
+            inset: 0;
+            color: #12152b;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 46px;
+            font-weight: 800;
+            letter-spacing: 18px;
+            line-height: 140px;
+            opacity: 0.035;
+            transform: rotate(-8deg) scale(1.15);
+            pointer-events: none;
         }
 
         .profile-image img {
@@ -1057,6 +1076,8 @@
             gap: 12px;
             padding: 30px 20px 25px;
             text-align: center;
+            background: linear-gradient(135deg, rgba(124, 77, 255, 0.09), rgba(86, 199, 217, 0.08), rgba(242, 140, 40, 0.08));
+            border-radius: 0 0 18px 18px;
         }
 
         .service-brand img {
@@ -1085,7 +1106,7 @@
         }
 
         .content-block h3 {
-            color: #111827;
+            color: #12152b;
             font-family: "Roboto";
             font-size: 24px;
             font-weight: 800;
@@ -1101,7 +1122,7 @@
         }
 
         .content-block b {
-            color: #0B3A73;
+            color: #316fe6;
         }
 
         .highlight-list {
@@ -1124,7 +1145,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #de1751;
+            background: linear-gradient(135deg, #7c4dff, #56c7d9, #de1751);
         }
 
         .service-group {
@@ -1144,14 +1165,14 @@
         }
 
         .quote {
-            color: #0B3A73 !important;
+            color: #316fe6 !important;
             font-style: italic;
             font-weight: 800;
             margin-bottom: 14px;
         }
 
         .callout {
-            background: #fff1f5;
+            background: linear-gradient(90deg, rgba(222, 23, 81, 0.08), rgba(242, 140, 40, 0.08));
             border-left: 5px solid #de1751;
             border-radius: 0 10px 10px 0;
             padding: 15px 18px;
@@ -1172,6 +1193,68 @@
             width: 120px;
             height: auto;
             border-radius: 8px;
+        }
+
+        .tech-lab {
+            background: linear-gradient(135deg, rgba(18, 21, 43, 0.03), rgba(86, 199, 217, 0.06), rgba(242, 140, 40, 0.05));
+        }
+
+        .lab-intro {
+            margin-bottom: 16px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin: 16px 0 20px;
+        }
+
+        .tech-grid span {
+            border: 1px solid rgba(49, 111, 230, 0.18);
+            background: rgba(255, 255, 255, 0.82);
+            border-radius: 14px;
+            padding: 14px;
+            box-shadow: 0 8px 20px rgba(18, 21, 43, 0.06);
+        }
+
+        .tech-grid b {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        .tech-grid small {
+            color: #64748b;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .workflow-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .workflow-list li {
+            color: #475569;
+            font-family: "Roboto";
+            font-size: 18px;
+            line-height: 27px;
+            padding: 13px 15px;
+            border-left: 4px solid #56c7d9;
+            background: rgba(255, 255, 255, 0.78);
+            border-radius: 0 12px 12px 0;
+        }
+
+        .workflow-list li:nth-child(2) {
+            border-left-color: #de1751;
+        }
+
+        .workflow-list li:nth-child(3) {
+            border-left-color: #f28c28;
         }
 
 
