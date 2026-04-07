@@ -22,7 +22,7 @@
         }
         body {
             font-family: 'Roboto';
-            background: transparent linear-gradient(180deg, #FFFFFF 0%, #f3f7ff 50%, #fff4eb 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #FFFFFF 0%, #eef6ff 100%) 0% 0% no-repeat padding-box;
             background-repeat: repeat-y;
             background-attachment: fixed;
             /* background-repeat: no-repeat; */
@@ -71,7 +71,7 @@
             top: 0;
             overflow: hidden;
             z-index: -2;
-            background-color: #f3f7ff;
+            background-color: #eef6ff;
         }
         .cardbgcolorblock::after {
             content: "";
@@ -307,7 +307,7 @@
         .title {
             font-family: 'Roboto';
             font-weight: 500;
-            color: #316fe6;
+            color: #0B3A73;
             /* opacity: 0.8; */
             font-size: 20px;
             text-align: left;
@@ -695,7 +695,7 @@
             margin-bottom: 12px;
         }
         .company-name{
-            color: #316fe6;
+            color: #0B3A73;
             font-family: 'Roboto';
             font-size: 24px;
             font-weight: bold;
@@ -1061,18 +1061,18 @@
         }
 
         body {
-            background: transparent linear-gradient(180deg, #FFFFFF 0%, #f3f7ff 50%, #fff4eb 100%) 0% 0% no-repeat padding-box;
+            background: transparent linear-gradient(180deg, #FFFFFF 0%, #eef6ff 100%) 0% 0% no-repeat padding-box;
         }
 
         .cardbgcolorblock {
-            background: linear-gradient(135deg, #f7f4ff 0%, #ecfbff 42%, #fff5ea 100%);
+            background: #eef6ff;
         }
 
         .cardbgcolorblock::before {
             content: "</>  { }  npm  React  Node  MongoDB  API  UI";
             position: absolute;
             inset: 0;
-            color: #12152b;
+            color: #04312B;
             font-family: Consolas, "Courier New", monospace;
             font-size: 46px;
             font-weight: 800;
@@ -1099,7 +1099,7 @@
             gap: 12px;
             padding: 30px 20px 25px;
             text-align: center;
-            background: linear-gradient(135deg, rgba(124, 77, 255, 0.09), rgba(86, 199, 217, 0.08), rgba(242, 140, 40, 0.08));
+            background: rgba(238, 246, 255, 0.75);
             border-radius: 0 0 18px 18px;
         }
 
@@ -1129,7 +1129,7 @@
         }
 
         .content-block h3 {
-            color: #12152b;
+            color: #111827;
             font-family: "Roboto";
             font-size: 24px;
             font-weight: 800;
@@ -1145,7 +1145,7 @@
         }
 
         .content-block b {
-            color: #316fe6;
+            color: #0B3A73;
         }
 
         .highlight-list {
@@ -1168,7 +1168,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #7c4dff, #56c7d9, #de1751);
+            background: #de1751;
         }
 
         .service-group {
@@ -1188,14 +1188,14 @@
         }
 
         .quote {
-            color: #316fe6 !important;
+            color: #0B3A73 !important;
             font-style: italic;
             font-weight: 800;
             margin-bottom: 14px;
         }
 
         .callout {
-            background: linear-gradient(90deg, rgba(222, 23, 81, 0.08), rgba(242, 140, 40, 0.08));
+            background: #fff1f5;
             border-left: 5px solid #de1751;
             border-radius: 0 10px 10px 0;
             padding: 15px 18px;
@@ -1224,7 +1224,7 @@
         }
 
         .clients-section {
-            background: linear-gradient(135deg, rgba(17, 24, 39, 0.025), rgba(242, 140, 40, 0.06));
+            background: rgba(238, 246, 255, 0.6);
         }
 
         .clients-intro {
