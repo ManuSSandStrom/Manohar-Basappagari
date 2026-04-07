@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Manohar Basappagari
+N:Basappagari;Manohar;;;
+ORG:MERNpixel
+TITLE:MERN Stack Web Developer
+TEL;TYPE=CELL:+919515022680
+EMAIL;TYPE=INTERNET:manoharbasappagari18@gmail.com
+EMAIL;TYPE=WORK,INTERNET:mernpixel@gmail.com
+URL:https://mernpixel.com
+END:VCARD
