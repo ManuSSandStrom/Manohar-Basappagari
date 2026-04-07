@@ -545,13 +545,19 @@
         .download-leftSection a{
             display: flex;
             justify-content: center;
-            margin-right: 8px;
+            margin-right: 10px;
             cursor: pointer;
         }
 
         .download-leftSection a{
             /* width: 36px; */
-            height: 44px;
+            height: 50px;
+        }
+
+        .download-leftSection a img {
+            width: auto;
+            height: 100%;
+            display: block;
         }
 
         .download-leftSection a:last-child{
